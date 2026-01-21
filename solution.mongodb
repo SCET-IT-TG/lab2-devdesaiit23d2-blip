@@ -1,0 +1,24 @@
+
+
+db.companyDB.insertMany([{name : "Dev",department:"IT",salary:20000,age:25},{name : "Ved",department:"HR",salary:40000,age:35},{name : "Mike",department:"Sales",salary:50000,age:32},{name : "Rahul",department:"IT",salary:60000,age:29},name : "Isabel",department:"HR",salary:50000,age:22}])
+
+
+db.companyDB.find({department :"IT"})
+
+db.companyDB.find({name :"Rahul"})
+
+
+
+db.companyDB.find().pretty()
+db.companyDB.distinct("department")
+
+
+
+db.companyDB.find({salary : { $gt:50000} })
+ db.companyDB.find({salary : { $lt:30000} })
+
+
+db.companyDB.find({age : { $gte:30} })
+db.companyDB.find({age : { $lte:25} })
+
+db.companyDB.find({salary : { $gte:40000,$lte:80000} })
