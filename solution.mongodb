@@ -5,7 +5,8 @@ db.employees.insertMany([
   { name: "Ved", department: "HR", salary: 40000, age: 35 },
   { name: "Mike", department: "Sales", salary: 50000, age: 32 },
   { name: "Rahul", department: "IT", salary: 60000, age: 29 },
-  { name: "Isabel", department: "HR", salary: 50000, age: 22 }
+  { name: "Isabel", department: "HR", salary: 50000, age: 22 },
+  { name: "Aniket", department: "Sales",salary:25000,age:23}
 ])
 
 db.employees.find({ department: "IT" })
@@ -21,3 +22,4 @@ db.employees.find({ age: { $gte: 30 } })
 db.employees.find({ age: { $lte: 25 } })
 
 db.employees.find({ salary: { $gte: 40000, $lte: 80000 } })
+
